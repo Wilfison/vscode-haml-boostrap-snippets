@@ -1,0 +1,8 @@
+%table.table
+  %thead
+    %tr
+      %th ID
+  %tbody
+    - @${1}s.each do |${1}|
+      %tr
+        %td{scope: 'row'}= $1.id

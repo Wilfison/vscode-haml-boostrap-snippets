@@ -1,0 +1,20 @@
+#${1:accordion}{'aria-multiselectable': 'true', role: 'tablist'}
+  .card
+    .card-header#${2:section-header}-1{role: 'tab'}
+      %h5.mb-0
+        %a{'aria-controls': '${2:section-content}-1', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-1'}
+          Section 1
+
+    .collapse.in#${2:section-content}-1{'aria-labelledby': '${2:section-header}-1', role: 'tabpanel'}
+      .card-body
+        Section 1 content
+
+  .card
+    .card-header#${2:section-header}-2{role: 'tab'}
+      %h5.mb-0
+        %a{'aria-controls': '${2:section-content}-2', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-2'}
+          Section 2
+
+    .collapse.in#${2:section-content}-2{'aria-labelledby': '${2:section-header}-2', role: 'tabpanel'}
+      .card-body
+        Section 2 content
