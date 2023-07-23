@@ -1,6 +1,6 @@
 {
-  "name": "haml-bootstrap",
-  "displayName": "HAML bootstrap 4,5 Snippets",
+  "name": "haml-boostrap",
+  "displayName": "HAML Bootstrap 4,5 Snippets",
   "description": "HAML Bootstrap 4,5 Snippets for Vs Code",
   "publisher": "wilfison",
   "version": "1.0.2",
@@ -30,6 +30,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wilfison/vscode-haml-boostrap-snippets.git"
+    "url": "https://github.com/Wilfison/vscode-haml-bootstrap-snippets.git"
   }
 }

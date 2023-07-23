@@ -1,6 +1,10 @@
 .vscode/**
 .vscode-test/**
+bootstrap/**
+lib/**
+tmp/**
+images/*.gif
 .gitignore
-vsc-extension-quickstart.md
+*.vsix
 *.rb
 *.yml
