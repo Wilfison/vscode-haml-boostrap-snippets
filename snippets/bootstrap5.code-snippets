@@ -17,70 +17,79 @@
       "        ${4:Item 2}",
       "    .accordion-collapse.collapse#${1:accordion}-2-collapse{'aria-labelledby': '${1:accordion}-2-head', 'data-bs-parent': '#${1:accordion}'}",
       "      .accordion-body",
-      "        $5"
+      "        $5",
+      ""
     ]
   },
-  "Alert additional content": {
+  "Alert Additional Content": {
     "prefix": "bs5-alert-additional-content",
     "body": [
       ".alert.alert-${1|primary,secondary,success,danger,warning,info,light,dark|}{role: 'alert'}",
       "  %h4.alert-heading ${2:Well done!}",
       "  %p $3",
       "  %hr/",
-      "  %p.mb-0 $4"
+      "  %p.mb-0 $4",
+      ""
     ]
   },
-  "Alert dismissible": {
+  "Alert Dismissible": {
     "prefix": "bs5-alert-dismissible",
     "body": [
       ".alert.alert-${1|primary,secondary,success,danger,warning,info,light,dark|}.alert-dismissible.fade.show{role: 'alert'}",
       "  ${2:A simple alert}",
-      "  %button.btn-close{'aria-label': 'Close', 'data-bs-dismiss': 'alert', type: 'button'}"
+      "  %button.btn-close{'aria-label': 'Close', 'data-bs-dismiss': 'alert', type: 'button'}",
+      ""
     ]
   },
-  "Alert link": {
+  "Alert Link": {
     "prefix": "bs5-alert-link",
     "body": [
       ".alert.alert-${1|primary,secondary,success,danger,warning,info,light,dark|}{role: 'alert'}",
       "  ${2:A simple primary alert with}",
-      "  %a.alert-link{href: '#'} ${3:an example link}"
+      "  %a.alert-link{href: '#'} ${3:an example link}",
+      ""
     ]
   },
   "Alert": {
     "prefix": "bs5-alert",
     "body": [
       ".alert.alert-${1|primary,secondary,success,danger,warning,info,light,dark|}{role: 'alert'}",
-      "  ${2:A simple alert}"
+      "  ${2:A simple alert}",
+      ""
     ]
   },
-  "Badge button": {
+  "Badge Button": {
     "prefix": "bs5-badge-button",
     "body": [
       "%button.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'}",
       "  $2",
-      "  %span.badge.text-bg-${3|primary,secondary,success,danger,warning,info,light,dark|} $4"
+      "  %span.badge.text-bg-${3|primary,secondary,success,danger,warning,info,light,dark|} $4",
+      ""
     ]
   },
-  "Badge pill": {
+  "Badge Pill": {
     "prefix": "bs5-badge-pill",
     "body": [
-      "%span.rounded-pill.text-bg-${1|primary,secondary,success,danger,warning,info,light,dark|} $2"
+      "%span.rounded-pill.text-bg-${1|primary,secondary,success,danger,warning,info,light,dark|} $2",
+      ""
     ]
   },
-  "Badge positioned": {
+  "Badge Positioned": {
     "prefix": "bs5-badge-positioned",
     "body": [
       "%button.btn.position-relative.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'}",
       "  $2",
       "  %span.bg-${3|primary,secondary,success,danger,warning,info,light,dark|}.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill",
       "    $4",
-      "    %span.visually-hidden unread messages"
+      "    %span.visually-hidden unread messages",
+      ""
     ]
   },
   "Badge": {
     "prefix": "bs5-badge",
     "body": [
-      "%span.badge.bg-${1|primary,secondary,success,danger,warning,info,light,dark|} $2"
+      "%span.badge.bg-${1|primary,secondary,success,danger,warning,info,light,dark|} $2",
+      ""
     ]
   },
   "Breadcrumb": {
@@ -93,17 +102,19 @@
       "    %li.breadcrumb-item",
       "      %a{href: '#'} ${2:Library}",
       "    %li.breadcrumb-item.active{'aria-current': 'page'}",
-      "      ${3:Data}"
+      "      ${3:Data}",
+      ""
     ]
   },
-  "Button block": {
+  "Button Block": {
     "prefix": "bs5-button-block",
     "body": [
       ".d-grid.gap-2",
-      "  %button.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $2"
+      "  %button.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $2",
+      ""
     ]
   },
-  "Button group checkbox": {
+  "Button Group Checkbox": {
     "prefix": "bs5-button-group-checkbox",
     "body": [
       ".btn-group{'aria-label': '$1', role: 'group'}",
@@ -114,10 +125,11 @@
       "  %label.btn.btn-outline-primary{for: '${2:btn-check}-2'} Checkbox 2",
       "",
       "  %input.btn-check#${2:btn-check}-3{autocomplete: 'off', name: '${2:btn-check}-3', type: 'checkbox'}",
-      "  %label.btn.btn-outline-primary{for: '${2:btn-check}-3'} Checkbox 3"
+      "  %label.btn.btn-outline-primary{for: '${2:btn-check}-3'} Checkbox 3",
+      ""
     ]
   },
-  "Button group radio": {
+  "Button Group Radio": {
     "prefix": "bs5-button-group-radio",
     "body": [
       ".btn-group{'aria-label': '$1', role: 'group'}",
@@ -128,44 +140,50 @@
       "  %label.btn.btn-outline-primary{for: '${2:btn-check}-2'} Radio 2",
       "",
       "  %input.btn-check#${2:btn-check}-3{autocomplete: 'off', name: '${2:btn-check}-3', type: 'radio'}",
-      "  %label.btn.btn-outline-primary{for: '${2:btn-check}-3'} Radio 3"
+      "  %label.btn.btn-outline-primary{for: '${2:btn-check}-3'} Radio 3",
+      ""
     ]
   },
-  "Button group": {
+  "Button Group": {
     "prefix": "bs5-button-group",
     "body": [
       ".btn-group{'aria-label': '$1', role: 'group'}",
       "  %button.btn.btn-${2|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $3",
       "  %button.btn.btn-${2|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $4",
-      "  %button.btn.btn-${2|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $5"
+      "  %button.btn.btn-${2|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $5",
+      ""
     ]
   },
-  "Button link to": {
+  "Button Link To": {
     "prefix": "bs5-button-link-to",
     "body": [
-      "= link_to('$1', $2_path, class: 'btn btn-${3|primary,secondary,success,danger,warning,info,light,dark|}', role: 'button')"
+      "= link_to('$1', $2_path, class: 'btn btn-${3|primary,secondary,success,danger,warning,info,light,dark|}', role: 'button')",
+      ""
     ]
   },
-  "Button link": {
+  "Button Link": {
     "prefix": "bs5-button-link",
     "body": [
-      "%a.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{href: '#', role: 'button'} $2"
+      "%a.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{href: '#', role: 'button'} $2",
+      ""
     ]
   },
-  "Button outline": {
+  "Button Outline": {
     "prefix": "bs5-button-outline",
     "body": [
-      "%button.btn.btn-outline-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $2"
+      "%button.btn.btn-outline-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'} $2",
+      ""
     ]
   },
   "Button": {
     "prefix": "bs5-button",
     "body": [
       "%button.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{type: 'button'}",
-      "  $2"
+      "  $2",
+      ""
     ]
   },
-  "Card grid": {
+  "Card Grid": {
     "prefix": "bs5-card-grid",
     "body": [
       ".row.row-cols-1.row-cols-md-2.g-4",
@@ -183,10 +201,11 @@
       "      .card-body",
       "        %h5.card-title $3",
       "        %p.card-text $4",
-      "        %a.btn.btn-primary{href: '#'} $5"
+      "        %a.btn.btn-primary{href: '#'} $5",
+      ""
     ]
   },
-  "Card horizontal": {
+  "Card Horizontal": {
     "prefix": "bs5-card-horizontal",
     "body": [
       ".card.mb-3",
@@ -198,10 +217,11 @@
       "        %h5.card-title $3",
       "        %p.card-text $4",
       "        %p.card-text",
-      "          %small.text-muted $5"
+      "          %small.text-muted $5",
+      ""
     ]
   },
-  "Card image": {
+  "Card Image": {
     "prefix": "bs5-card-image",
     "body": [
       ".card",
@@ -209,10 +229,11 @@
       "  .card-body",
       "    %h5.card-title $3",
       "    %p.card-text $4",
-      "    %a.btn.btn-primary{href: '#'} $5"
+      "    %a.btn.btn-primary{href: '#'} $5",
+      ""
     ]
   },
-  "Card tabs": {
+  "Card Tabs": {
     "prefix": "bs5-card-tabs",
     "body": [
       ".card",
@@ -239,7 +260,8 @@
       "        %h5.card-title ${3:contact} content",
       "",
       "      .tab-pane.fade#${4:profile}-tab-pane{'aria-labelledby': '${4:profile}-tab', role: 'tabpanel', tabindex: '0'}",
-      "        %h5.card-title ${4:profile} content"
+      "        %h5.card-title ${4:profile} content",
+      ""
     ]
   },
   "Card": {
@@ -253,10 +275,11 @@
       "    %p.card-text $3",
       "    %a.btn.btn-primary{href: '#'} $4",
       "  .card-footer.text-muted",
-      "    $5"
+      "    $5",
+      ""
     ]
   },
-  "Carousel caption": {
+  "Carousel Caption": {
     "prefix": "bs5-carousel-caption",
     "body": [
       ".carousel.slide#${1:carousel}{'data-bs-ride': 'false'}",
@@ -290,10 +313,11 @@
       "",
       "  %button.carousel-control-next{'data-bs-slide': 'next', 'data-bs-target': '#$1', type: 'button'}",
       "    %span.carousel-control-next-icon{'aria-hidden': 'true'}",
-      "    %span.visually-hidden Next"
+      "    %span.visually-hidden Next",
+      ""
     ]
   },
-  "Carousel controls": {
+  "Carousel Controls": {
     "prefix": "bs5-carousel-controls",
     "body": [
       ".carousel.slide#${1:carousel}{'data-bs-ride': 'carousel'}",
@@ -311,10 +335,11 @@
       "",
       "  %button.carousel-control-next{'data-bs-slide': 'next', 'data-bs-target': '#$1', type: 'button'}",
       "    %span.carousel-control-next-icon{'aria-hidden': 'true'}",
-      "    %span.visually-hidden Next"
+      "    %span.visually-hidden Next",
+      ""
     ]
   },
-  "Carousel crossfade": {
+  "Carousel Crossfade": {
     "prefix": "bs5-carousel-crossfade",
     "body": [
       ".carousel.slide.carousel-fade#${1:carousel}{'data-bs-ride': 'carousel'}",
@@ -334,10 +359,11 @@
       "",
       "  %button.carousel-control-next{'data-bs-slide': 'next', 'data-bs-target': '#$1', type: 'button'}",
       "    %span.carousel-control-next-icon{'aria-hidden': 'true'}",
-      "    %span.visually-hidden Next"
+      "    %span.visually-hidden Next",
+      ""
     ]
   },
-  "Carousel indicators": {
+  "Carousel Indicators": {
     "prefix": "bs5-carousel-indicators",
     "body": [
       ".carousel.slide#${1:carousel}{'data-bs-ride': 'true'}",
@@ -362,7 +388,8 @@
       "",
       "  %button.carousel-control-next{'data-bs-slide': 'next', 'data-bs-target': '#$1', type: 'button'}",
       "    %span.carousel-control-next-icon{'aria-hidden': 'true'}",
-      "    %span.visually-hidden Next"
+      "    %span.visually-hidden Next",
+      ""
     ]
   },
   "Carousel": {
@@ -377,7 +404,8 @@
       "      %img.d-block.w-100{alt: '${3:#}', src: '#'}/",
       "",
       "    .carousel-item",
-      "      %img.d-block.w-100{alt: '${4:#}', src: '#'}/"
+      "      %img.d-block.w-100{alt: '${4:#}', src: '#'}/",
+      ""
     ]
   },
   "Collapse": {
@@ -388,10 +416,11 @@
       "    ${2:Collapse}",
       "",
       ".collapse#${1:collapse}",
-      "  .card.card-body $3"
+      "  .card.card-body $3",
+      ""
     ]
   },
-  "Dropdown directions": {
+  "Dropdown Directions": {
     "prefix": "bs5-dropdown-directions",
     "body": [
       ".drop${4|down-center,up,up-center,end,start|}",
@@ -399,7 +428,8 @@
       "    ${3:Dropdown}",
       "  %ul.dropdown-menu",
       "    %li",
-      "      %a.dropdown-item{href: '$4'} $5"
+      "      %a.dropdown-item{href: '$4'} $5",
+      ""
     ]
   },
   "Dropdown": {
@@ -414,7 +444,8 @@
       "      %a.dropdown-item{href: '$5'} $6",
       "    %li",
       "      %hr.dropdown-divider/",
-      "    %a.dropdown-item{href: '$7'} $8"
+      "    %a.dropdown-item{href: '$7'} $8",
+      ""
     ]
   },
   "HTML5 Bootstrap": {
@@ -437,10 +468,11 @@
       "",
       "    -# include Popper if needed positioning dropdowns, poppers, and tooltips",
       "    -# %script{crossorigin: 'anonymous', integrity: 'sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r', src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js'}",
-      "    %script{crossorigin: 'anonymous', integrity: 'sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS', src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js'}"
+      "    %script{crossorigin: 'anonymous', integrity: 'sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS', src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js'}",
+      ""
     ]
   },
-  "List group badges": {
+  "List Group Badges": {
     "prefix": "bs5-list-group-badges",
     "body": [
       "%ul.list-group",
@@ -454,10 +486,11 @@
       "",
       "  %li.list-group-item.d-flex.justify-content-between.align-items-center",
       "    $3",
-      "    %span.badge.bg-primary.rounded-pill 1"
+      "    %span.badge.bg-primary.rounded-pill 1",
+      ""
     ]
   },
-  "List group checkbox": {
+  "List Group Checkbox": {
     "prefix": "bs5-list-group-checkbox",
     "body": [
       "%ul.list-group",
@@ -471,19 +504,21 @@
       "",
       "  %li.list-group-item",
       "    %input.form-check-input.me-1{id: '$1-3', type: 'checkbox', value: ''}/",
-      "    %label.form-check-label.stretched-link{for: '$1-3'} $4"
+      "    %label.form-check-label.stretched-link{for: '$1-3'} $4",
+      ""
     ]
   },
-  "List group flush": {
+  "List Group Flush": {
     "prefix": "bs5-list-group-flush",
     "body": [
       "%ul.list-group.list-group-flush",
       "  %li.list-group-item $1",
       "  %li.list-group-item $2",
-      "  %li.list-group-item $3"
+      "  %li.list-group-item $3",
+      ""
     ]
   },
-  "List group radio": {
+  "List Group Radio": {
     "prefix": "bs5-list-group-radio",
     "body": [
       "%ul.list-group",
@@ -497,19 +532,21 @@
       "",
       "  %li.list-group-item",
       "    %input.form-check-input.me-1{id: '$1-3', name: '${1}', type: 'radio', value: ''}/",
-      "    %label.form-check-label.stretched-link{for: '$1-3'} $4"
+      "    %label.form-check-label.stretched-link{for: '$1-3'} $4",
+      ""
     ]
   },
-  "List group": {
+  "List Group": {
     "prefix": "bs5-list-group",
     "body": [
       "%ul.list-group",
       "  %li.list-group-item $1",
       "  %li.list-group-item $2",
-      "  %li.list-group-item $3"
+      "  %li.list-group-item $3",
+      ""
     ]
   },
-  "Modal centered": {
+  "Modal Centered": {
     "prefix": "bs5-modal-centered",
     "body": [
       "%button.btn.btn-primary{'data-bs-target': '#${1:modal}', 'data-bs-toggle': 'modal', type: 'button'}",
@@ -526,10 +563,11 @@
       "      .modal-footer",
       "        %button.btn.btn-secondary{'data-bs-dismiss': 'modal', type: 'button'}",
       "          ${4:Close}",
-      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}"
+      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}",
+      ""
     ]
   },
-  "Modal form": {
+  "Modal Form": {
     "prefix": "bs5-modal-form",
     "body": [
       "%button.btn.btn-primary{'data-bs-target': '#${1:modal}', 'data-bs-toggle': 'modal', type: 'button'}",
@@ -548,10 +586,11 @@
       "        .modal-footer",
       "          %button.btn.btn-secondary{'data-bs-dismiss': 'modal', type: 'button'}",
       "            ${5:Close}",
-      "          %button.btn.btn-primary{type: 'submit'} ${6:Save changes}"
+      "          %button.btn.btn-primary{type: 'submit'} ${6:Save changes}",
+      ""
     ]
   },
-  "Modal sizes": {
+  "Modal Sizes": {
     "prefix": "bs5-modal-sizes",
     "body": [
       "%button.btn.btn-primary{'data-bs-target': '#${2:modal}', 'data-bs-toggle': 'modal', type: 'button'}",
@@ -568,10 +607,11 @@
       "      .modal-footer",
       "        %button.btn.btn-secondary{'data-bs-dismiss': 'modal', type: 'button'}",
       "          ${4:Close}",
-      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}"
+      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}",
+      ""
     ]
   },
-  "Modal static": {
+  "Modal Static": {
     "prefix": "bs5-modal-static",
     "body": [
       "%button.btn.btn-primary{'data-bs-target': '#${1:modal}', 'data-bs-toggle': 'modal', type: 'button'}",
@@ -590,10 +630,11 @@
       "      .modal-footer",
       "        %button.btn.btn-secondary{'data-bs-dismiss': 'modal', type: 'button'}",
       "          ${4:Close}",
-      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}"
+      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}",
+      ""
     ]
   },
-  "Modal youtube video": {
+  "Modal Youtube Video": {
     "prefix": "bs5-modal-youtube-video",
     "body": [
       "-# data-youtubeid: Set youtube video ID",
@@ -633,7 +674,8 @@
       "  // stop playing the youtube video when I close the modal",
       "  ytModalElm.addEventListener('hide.bs.modal', () => {",
       "    ytVideoElm.src = '';",
-      "  });"
+      "  });",
+      ""
     ]
   },
   "Modal": {
@@ -653,10 +695,11 @@
       "      .modal-footer",
       "        %button.btn.btn-secondary{'data-bs-dismiss': 'modal', type: 'button'}",
       "          ${4:Close}",
-      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}"
+      "        %button.btn.btn-primary{type: 'button'} ${5:Save changes}",
+      ""
     ]
   },
-  "Nav pills": {
+  "Nav Pills": {
     "prefix": "bs5-nav-pills",
     "body": [
       "%ul.nav.nav-pills",
@@ -667,10 +710,11 @@
       "  %li.nav-item",
       "    %a.nav-link{href: '${6:#}'} $5",
       "  %li.nav-item",
-      "    %a.nav-link.disabled $0"
+      "    %a.nav-link.disabled $0",
+      ""
     ]
   },
-  "Nav tabs vertical": {
+  "Nav Tabs Vertical": {
     "prefix": "bs5-nav-tabs-vertical",
     "body": [
       ".d-flex.align-items-start.gap-3",
@@ -691,33 +735,39 @@
       "    .tab-pane.fade#${3:profile}-tab-pane{'aria-labelledby': '${3:profile}-tab', role: 'tabpanel', tabindex: '0'}",
       "      $6",
       "    .tab-pane.fade#${4:contact}-tab-pane{'aria-labelledby': '${4:contact}-tab', role: 'tabpanel', tabindex: '0'}",
-      "      $7"
+      "      $7",
+      ""
     ]
   },
-  "Nav tabs": {
+  "Nav Tabs": {
     "prefix": "bs5-nav-tabs",
     "body": [
-      "%ul.nav.nav-pills#${1:navtab}{role: 'tablist'}",
+      "%ul.nav.nav-tabs#${1:card}-tab{role: 'tablist'}",
       "  %li.nav-item{role: 'presentation'}",
       "    %button.nav-link.active#${2:home}-tab{'aria-controls': '${2:home}-tab-pane', 'aria-selected': 'true', 'data-bs-target': '#${2:home}-tab-pane', 'data-bs-toggle': 'tab', role: 'tab', type: 'button'}",
-      "      ${2:Home}",
-      "  %li.nav-item{role: 'presentation'}",
-      "    %button.nav-link#${3:profile}-tab{'aria-controls': '${3:profile}-tab-pane', 'aria-selected': 'false', 'data-bs-target': '#${3:profile}-tab-pane', 'data-bs-toggle': 'tab', role: 'tab', type: 'button'}",
-      "      ${3:Profile}",
-      "  %li.nav-item{role: 'presentation'}",
-      "    %button.nav-link#${4:contact}-tab{'aria-controls': '${4:contact}-tab-pane', 'aria-selected': 'false', 'data-bs-target': '#${4:contact}-tab-pane', 'data-bs-toggle': 'tab', role: 'tab', type: 'button'}",
-      "      ${4:Contact}",
+      "      ${2:home}",
       "",
-      ".tab-content#${1:navtab}-content",
+      "  %li.nav-item{role: 'presentation'}",
+      "    %button.nav-link#${3:contact}-tab{'aria-controls': '${3:contact}-tab-pane', 'aria-selected': 'false', 'data-bs-target': '#${3:contact}-tab-pane', 'data-bs-toggle': 'tab', role: 'tab', type: 'button'}",
+      "      ${3:contact}",
+      "",
+      "  %li.nav-item{role: 'presentation'}",
+      "    %button.nav-link#${4:profile}-tab{'aria-controls': '${4:profile}-tab-pane', 'aria-selected': 'false', 'data-bs-target': '#${4:profile}-tab-pane', 'data-bs-toggle': 'tab', role: 'tab', type: 'button'}",
+      "      ${4:profile}",
+      "",
+      ".tab-content#${1:card}-tab-content",
       "  .tab-pane.fade.show.active#${2:home}-tab-pane{'aria-labelledby': '${2:home}-tab', role: 'tabpanel', tabindex: '0'}",
-      "    $5",
-      "  .tab-pane.fade#${3:profile}-tab-pane{'aria-labelledby': '${3:profile}-tab', role: 'tabpanel', tabindex: '0'}",
-      "    $6",
-      "  .tab-pane.fade#${4:contact}-tab-pane{'aria-labelledby': '${4:contact}-tab', role: 'tabpanel', tabindex: '0'}",
-      "    $7"
+      "    %h5.card-title ${2:home} content",
+      "",
+      "  .tab-pane.fade#${3:contact}-tab-pane{'aria-labelledby': '${3:contact}-tab', role: 'tabpanel', tabindex: '0'}",
+      "    %h5.card-title ${3:contact} content",
+      "",
+      "  .tab-pane.fade#${4:profile}-tab-pane{'aria-labelledby': '${4:profile}-tab', role: 'tabpanel', tabindex: '0'}",
+      "    %h5.card-title ${4:profile} content",
+      ""
     ]
   },
-  "Nav vertical": {
+  "Nav Vertical": {
     "prefix": "bs5-nav-vertical",
     "body": [
       "%ul.nav.flex-column",
@@ -728,7 +778,8 @@
       "  %li.nav-item",
       "    %a.nav-link{href: '${6:#}'} $5",
       "  %li.nav-item",
-      "    %a.nav-link.disabled $0"
+      "    %a.nav-link.disabled $0",
+      ""
     ]
   },
   "Nav": {
@@ -742,7 +793,8 @@
       "  %li.nav-item",
       "    %a.nav-link{href: '${6:#}'} $5",
       "  %li.nav-item",
-      "    %a.nav-link.disabled $0"
+      "    %a.nav-link.disabled $0",
+      ""
     ]
   },
   "Navbar": {
@@ -790,7 +842,8 @@
       "              %path{d: 'M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z', 'fill-rule': 'evenodd'}",
       "          %ul.dropdown-menu",
       "            %li",
-      "              %a.dropdown-item{href: '#'} Logout"
+      "              %a.dropdown-item{href: '#'} Logout",
+      ""
     ]
   },
   "Offcanvas": {
@@ -804,7 +857,8 @@
       "    %h5.offcanvas-title#${1:offcanvas}-label ${3:Offcanvas}",
       "    %button.btn-close{'aria-label': 'Close', 'data-bs-dismiss': 'offcanvas', type: 'button'}",
       "  .offcanvas-body",
-      "    %div ${4:Some text as placeholder.}"
+      "    %div ${4:Some text as placeholder.}",
+      ""
     ]
   },
   "Pagination": {
@@ -821,7 +875,8 @@
       "    %li.page-item",
       "      %a.page-link{href: '#'} 3",
       "    %li.page-item",
-      "      %a.page-link{href: '#'} ${3:Next}"
+      "      %a.page-link{href: '#'} ${3:Next}",
+      ""
     ]
   },
   "Popover": {
@@ -835,24 +890,27 @@
       "    .querySelectorAll('[data-bs-toggle='popover']')",
       "    .forEach((popoverEl) => {",
       "      new bootstrap.Popover(popoverEl);",
-      "    });"
+      "    });",
+      ""
     ]
   },
-  "Progress multiple bars": {
+  "Progress Multiple Bars": {
     "prefix": "bs5-progress-multiple-bars",
     "body": [
       ".progress",
       "  .progress-bar.bg-${1|primary,secondary,success,danger,warning,info,light,dark|}{'aria-label': '$2', 'aria-valuemax': '100', 'aria-valuemin': '0', 'aria-valuenow': '${3:25}', role: 'progressbar', style: 'width: ${3:25}%'}",
       "  .progress-bar.bg-${4|primary,secondary,success,danger,warning,info,light,dark|}{'aria-label': '$5', 'aria-valuemax': '100', 'aria-valuemin': '0', 'aria-valuenow': '${6:25}', role: 'progressbar', style: 'width: ${6:25}%'}",
-      "$0"
+      "$0",
+      ""
     ]
   },
-  "Progress striped": {
+  "Progress Striped": {
     "prefix": "bs5-progress-striped",
     "body": [
       ".progress",
       "  .progress-bar.progress-bar-striped.bg-${1|primary,secondary,success,danger,warning,info,light,dark|}{'aria-label': '$2', 'aria-valuemax': '${3:100}', 'aria-valuemin': '${4:0}', 'aria-valuenow': '${5:25}', role: 'progressbar', style: 'width: ${5:25}%'}",
-      "$0"
+      "$0",
+      ""
     ]
   },
   "Progress": {
@@ -860,22 +918,25 @@
     "body": [
       ".progress",
       "  .progress-bar.bg-${1|primary,secondary,success,danger,warning,info,light,dark|}{'aria-label': '$2', 'aria-valuemax': '${3:100}', 'aria-valuemin': '${4:0}', 'aria-valuenow': '${5:25}', role: 'progressbar', style: 'width: ${5:25}%'}",
-      "$0"
+      "$0",
+      ""
     ]
   },
-  "Spinner button": {
+  "Spinner Button": {
     "prefix": "bs5-spinner-button",
     "body": [
       "%button.btn.btn-${1|primary,secondary,success,danger,warning,info,light,dark|}{disabled: 'disabled', type: 'button'}",
       "  %span.spinner-${2|border,grow|}.spinner-$2-sm{'aria-hidden': 'true', role: 'status'}",
-      "  ${3:Loading...}"
+      "  ${3:Loading...}",
+      ""
     ]
   },
   "Spinner": {
     "prefix": "bs5-spinner",
     "body": [
       ".spinner-${1|border,grow|}.text-${2|primary,secondary,success,danger,warning,info,light,dark|}{role: 'status'}",
-      "  %span.visually-hidden ${3:Loading...}"
+      "  %span.visually-hidden ${3:Loading...}",
+      ""
     ]
   },
   "Toast": {
@@ -906,7 +967,8 @@
       "",
       "      toast.show();",
       "    });",
-      "  }"
+      "  }",
+      ""
     ]
   },
   "Tooltip": {
@@ -921,7 +983,8 @@
       "    .querySelectorAll('[data-bs-toggle='tooltip']')",
       "    .forEach((tooltipEl) => {",
       "      new bootstrap.Tooltip(tooltipEl);",
-      "    });"
+      "    });",
+      ""
     ]
   }
 }

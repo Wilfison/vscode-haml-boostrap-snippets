@@ -31,5 +31,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Wilfison/vscode-haml-bootstrap-snippets.git"
+  },
+  "scripts": {
+    "build": "node builder.js"
   }
 }
