@@ -1,6 +1,6 @@
 # HAML bootstrap 4 & 5 Snippets for VS Code
 
-![preview](https://github.com/Wilfison/vscode-haml-boostrap-snippets/raw/HEAD/images/preview.gif)
+![preview](https://github.com/wilfison/vscode-haml-bootstrap-snippets/raw/HEAD/images/preview.gif)
 
 ## How to use
 
