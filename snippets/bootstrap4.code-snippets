@@ -7,7 +7,7 @@
       "    %span{'aria-hidden': 'true'} ×",
       "",
       "  %strong $1",
-      "  $2",
+      "  $0",
       ""
     ]
   },
@@ -24,8 +24,8 @@
     "prefix": "bs4-alert",
     "body": [
       ".alert.alert-${1|primary,secondary,success,danger,warning,info,light,dark|}{role: 'alert'}",
-      "  %strong ${1:Title}",
-      "  ${2:Content}",
+      "  %strong ${2:Title}",
+      "  ${3:Content}",
       ""
     ]
   },
@@ -344,26 +344,26 @@
   "Collapse Accordion": {
     "prefix": "bs4-collapse-accordion",
     "body": [
-      "#${1:accordion}{'aria-multiselectable': 'true', role: 'tablist'}",
+      ".accordion#accordion-${1:}",
       "  .card",
-      "    .card-header#${2:section-header}-1{role: 'tab'}",
-      "      %h5.mb-0",
-      "        %a{'aria-controls': '${2:section-content}-1', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-1'}",
-      "          Section 1",
-      "",
-      "    .collapse.in#${2:section-content}-1{'aria-labelledby': '${2:section-header}-1', role: 'tabpanel'}",
+      "    .card-header#heading-one",
+      "      %h2.mb-0",
+      "        %button.btn.btn-link.btn-block.text-left{'aria-controls': 'collapse-one', 'aria-expanded': 'true', 'data-target': '#collapse-one', 'data-toggle': 'collapse', type: 'button'}",
+      "          Collapsible Group Item #1",
+      "    .collapse.show#collapse-one{'aria-labelledby': 'heading-one', 'data-parent': '#accordion-${1:}'}",
       "      .card-body",
-      "        Section 1 content",
+      "        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the",
+      "        %code .show",
+      "        class.",
       "",
       "  .card",
-      "    .card-header#${2:section-header}-2{role: 'tab'}",
-      "      %h5.mb-0",
-      "        %a{'aria-controls': '${2:section-content}-2', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-2'}",
-      "          Section 2",
-      "",
-      "    .collapse.in#${2:section-content}-2{'aria-labelledby': '${2:section-header}-2', role: 'tabpanel'}",
+      "    .card-header#heading-two",
+      "      %h2.mb-0",
+      "        %button.btn.btn-link.btn-block.text-left.collapsed{'aria-controls': 'collapse-two', 'aria-expanded': 'false', 'data-target': '#collapse-two', 'data-toggle': 'collapse', type: 'button'}",
+      "          Collapsible Group Item #2",
+      "    .collapse#collapse-two{'aria-labelledby': 'heading-two', 'data-parent': '#accordion-${1:}'}",
       "      .card-body",
-      "        Section 2 content",
+      "        Some placeholder content for the second accordion panel. This panel is hidden by default.",
       ""
     ]
   },
@@ -371,11 +371,13 @@
     "prefix": "bs4-collapse-button",
     "body": [
       "%p",
-      "  %button.btn.btn-primary{'aria-controls': '${2:content-id}', 'aria-expanded': 'false', 'data-target': '#${2:content-id}', 'data-toggle': 'collapse', type: 'button'}",
-      "    ${1:Show}",
+      "  %button.btn.btn-primary{'aria-controls': 'collapse-${1:example}', 'aria-expanded': 'false', 'data-target': '#collapse-${1:example}', 'data-toggle': 'collapse', type: 'button'}",
+      "    Button with data-target",
       "",
-      ".collapse#${2:content-id}",
-      "  $3",
+      ".collapse#collapse-${1:example}",
+      "  .card.card-body",
+      "    Some placeholder content for the collapse component.",
+      "    This panel is hidden by default but revealed when the user activates the relevant trigger.",
       ""
     ]
   },
@@ -1150,11 +1152,11 @@
       "%table.table.table-striped.table-hover",
       "  %thead",
       "    %tr",
-      "      %th ID",
+      "      %th{scope: 'col'} ID",
       "  %tbody",
-      "    - @${1}s.each do |${1}|",
+      "    - @${1:resource}s.each do |${1:resource}|",
       "      %tr",
-      "        %td{scope: 'row'}= $1.id",
+      "        %td{scope: 'row'}= ${1:resource}.id",
       ""
     ]
   },
@@ -1164,11 +1166,11 @@
       "%table.table",
       "  %thead",
       "    %tr",
-      "      %th ID",
+      "      %th{scope: 'col'} ID",
       "  %tbody",
-      "    - @${1}s.each do |${1}|",
+      "    - @${1:resource}s.each do |${1:resource}|",
       "      %tr",
-      "        %td{scope: 'row'}= $1.id",
+      "        %td{scope: 'row'}= ${1:resource}.id",
       ""
     ]
   },

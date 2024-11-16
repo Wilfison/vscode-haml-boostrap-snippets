@@ -1,6 +1,8 @@
 %p
-  %button.btn.btn-primary{'aria-controls': '${2:content-id}', 'aria-expanded': 'false', 'data-target': '#${2:content-id}', 'data-toggle': 'collapse', type: 'button'}
-    ${1:Show}
+  %button.btn.btn-primary{'aria-controls': 'collapse-${1:example}', 'aria-expanded': 'false', 'data-target': '#collapse-${1:example}', 'data-toggle': 'collapse', type: 'button'}
+    Button with data-target
 
-.collapse#${2:content-id}
-  $3
+.collapse#collapse-${1:example}
+  .card.card-body
+    Some placeholder content for the collapse component.
+    This panel is hidden by default but revealed when the user activates the relevant trigger.

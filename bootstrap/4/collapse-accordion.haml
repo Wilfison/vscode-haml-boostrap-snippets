@@ -1,20 +1,20 @@
-#${1:accordion}{'aria-multiselectable': 'true', role: 'tablist'}
+.accordion#accordion-${1:}
   .card
-    .card-header#${2:section-header}-1{role: 'tab'}
-      %h5.mb-0
-        %a{'aria-controls': '${2:section-content}-1', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-1'}
-          Section 1
-
-    .collapse.in#${2:section-content}-1{'aria-labelledby': '${2:section-header}-1', role: 'tabpanel'}
+    .card-header#heading-one
+      %h2.mb-0
+        %button.btn.btn-link.btn-block.text-left{'aria-controls': 'collapse-one', 'aria-expanded': 'true', 'data-target': '#collapse-one', 'data-toggle': 'collapse', type: 'button'}
+          Collapsible Group Item #1
+    .collapse.show#collapse-one{'aria-labelledby': 'heading-one', 'data-parent': '#accordion-${1:}'}
       .card-body
-        Section 1 content
+        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the
+        %code .show
+        class.
 
   .card
-    .card-header#${2:section-header}-2{role: 'tab'}
-      %h5.mb-0
-        %a{'aria-controls': '${2:section-content}-2', 'aria-expanded': 'true', 'data-parent': '#${1:accordion}', 'data-toggle': 'collapse', href: '#${2:section-content}-2'}
-          Section 2
-
-    .collapse.in#${2:section-content}-2{'aria-labelledby': '${2:section-header}-2', role: 'tabpanel'}
+    .card-header#heading-two
+      %h2.mb-0
+        %button.btn.btn-link.btn-block.text-left.collapsed{'aria-controls': 'collapse-two', 'aria-expanded': 'false', 'data-target': '#collapse-two', 'data-toggle': 'collapse', type: 'button'}
+          Collapsible Group Item #2
+    .collapse#collapse-two{'aria-labelledby': 'heading-two', 'data-parent': '#accordion-${1:}'}
       .card-body
-        Section 2 content
+        Some placeholder content for the second accordion panel. This panel is hidden by default.
