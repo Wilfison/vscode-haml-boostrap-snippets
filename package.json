@@ -1,7 +1,7 @@
 {
   "name": "haml-boostrap",
-  "displayName": "HAML Bootstrap 4,5 Snippets",
-  "description": "HAML Bootstrap 4,5 Snippets for Vs Code",
+  "displayName": "HAML Bootstrap Snippets & Class Autocomplete",
+  "description": "HAML Bootstrap 4,5 Snippets and Class Autocomplete for Vs Code",
   "publisher": "wilfison",
   "version": "1.0.4",
   "icon": "./images/bootstrap.png",
@@ -9,8 +9,13 @@
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Other"
   ],
+  "activationEvents": [
+    "onLanguage:haml"
+  ],
+  "main": "./out/extension.js",
   "contributes": {
     "snippets": [
       {
@@ -33,6 +38,23 @@
     "url": "https://github.com/Wilfison/vscode-haml-bootstrap-snippets.git"
   },
   "scripts": {
-    "build": "node builder.js"
+    "vscode:prepublish": "npm run compile && npm run compile-snippets",
+    "compile-snippets": "node builder.js",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
   }
 }
