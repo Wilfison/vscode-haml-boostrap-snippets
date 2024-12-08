@@ -1,3 +1,9 @@
-tmp/
-Gemfile.lock
+out
+dist
+node_modules
+.vscode-test/
 *.vsix
+.vscode-test/**
+coverage
+tmp
+Gemfile.lock
