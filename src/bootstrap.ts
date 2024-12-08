@@ -5,6 +5,7 @@ import * as cache from './helpers/cache';
 
 class Bootstrap {
   public version: string = 'latest';
+  public majorVersion: string = '5';
   public locationType: string = 'remote';
   public classList: Array<string> = [];
 
@@ -12,12 +13,11 @@ class Bootstrap {
     let [version, locationType] = findVersionAndLocation('bootstrap', this.rootPath());
 
     this.version = version;
+    this.majorVersion = this.version.split('.')[0];
     this.locationType = locationType;
-
-    this.load();
   }
 
-  private load() {
+  public load() {
     const cached = cache.cacheExists('bootstrap', this.version);
 
     if (cached) {

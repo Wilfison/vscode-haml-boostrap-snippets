@@ -4,7 +4,11 @@ import Bootstrap from "./bootstrap";
 const CLASS_REGEX = /\.$|class["']?\s*[:=>]+\s*["']?[\w-\s:]*$/g
 
 class CompletionProvider implements CompletionItemProvider {
-  public bootstrap: Bootstrap = new Bootstrap();
+  public bootstrap: Bootstrap;
+
+  constructor(bootstrap: Bootstrap) {
+    this.bootstrap = bootstrap;
+  }
 
   public provideCompletionItems(document: TextDocument, position: Position, _token: any, _context: any): CompletionItem[] | undefined {
     const { shouldComplete, lastWord } = this.matchCompletion(document, position);

@@ -26,17 +26,7 @@
           "description": "Enable CSS class completion"
         }
       }
-    },
-    "snippets": [
-      {
-        "language": "haml",
-        "path": "./snippets/bootstrap4.code-snippets"
-      },
-      {
-        "language": "haml",
-        "path": "./snippets/bootstrap5.code-snippets"
-      }
-    ]
+    }
   },
   "keywords": [
     "bootstrap",
