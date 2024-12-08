@@ -17,6 +17,16 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "HAML Bootstrap Snippets & Class Autocomplete",
+      "properties": {
+        "hamlBootstrap.enableCssClassCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable CSS class completion"
+        }
+      }
+    },
     "snippets": [
       {
         "language": "haml",
